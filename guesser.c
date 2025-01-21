@@ -17,10 +17,15 @@ int main(){
 
 	bool keepGoing = true;
 
-	while (keepGoing) {
-		int guess;
+	while (keepGoing){
+		char guess;
 		printf("Guess a number between 1 and 100: ");
+		guess = (int);
 		scanf("%d", guess);
+		if (guess == correct)
+			printf("That's correct! You win!");
+			bool keepGoing = false;
+
 	} // end keepGoing
 
 	return 0;
