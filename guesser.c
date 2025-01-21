@@ -13,5 +13,22 @@ int main(){
 	int correct = (rand() % 100) + 1;
 	printf("%d \n", correct);
 
+	int tries = 0;
+
+	bool keepGoing = true;
+
+	while (keepGoing) {
+		int guess;
+		printf("Guess a number between 1 and 100: ");
+		scanf("%d", guess);
+		if (guess == correct)
+			printf("That's correct! You win!");
+			bool keepGoing = false;
+			else if (guess < correct)
+				printf("Too low");
+			else if (guess > correct)
+				printf("Too high");
+	} // end keepGoing
+
 	return 0;
 } // end main
